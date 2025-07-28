@@ -1,3 +1,17 @@
+# Hackberry Pi CM5 Sleep
+### Modified uConsole code
+
+Found on the uConsole forums originally, I wanted to see if I could get this working on the Hackberry Pi with a CM5 module by Zitao. Mostly working but has a couple of quirks to work out due to the Hackberry's different build. 
+Issues still being worked out are as follows:
+
+- Screen "blanks" properly but leaves lines on display which cause bad burn-in when the panel isn't given a signal.
+- Max clock speed drops to lower end but does not follow the config file's setting. Does seem follow any speeds set in the boot/firmware/config.txt file.
+
+The rest below is from the original project for posterity. I'm including a changes_dateXXX.txt file to show what I've changed explicitly alongside a *.original file to show the original script. 
+Please let me know if there's something I missed or didn't understand from the original script!
+
+######
+
 # uConsole-sleep
 ### uConsole Sleep service package
 
