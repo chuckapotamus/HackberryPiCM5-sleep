@@ -10,6 +10,15 @@ Issues still being worked out are as follows:
 The rest below is from the original project for posterity. I'm including a changes_dateXXX.txt file to show what I've changed explicitly alongside a *.original file to show the original script. 
 Please let me know if there's something I missed or didn't understand from the original script!
 
+### Installation
+Clone this repo then run the make_uconsole-sleep_package.sh script. 
+If it completed successfully it should spit out a uconsole-sleep.deb file in the same directory. 
+You can install this with:
+  sudo dpkg -i uconsole-sleep.deb
+
+If you run into issues or just want to remove this package run:
+  sudo dpkg -r uconsole-sleep
+
 ######
 
 # uConsole-sleep
