@@ -14,10 +14,19 @@ Please let me know if there's something I missed or didn't understand from the o
 Clone this repo then run the make_uconsole-sleep_package.sh script. 
 If it completed successfully it should spit out a uconsole-sleep.deb file in the same directory. 
 You can install this with:
-  sudo dpkg -i uconsole-sleep.deb
+-  $ sudo dpkg -i uconsole-sleep.deb
 
 If you run into issues or just want to remove this package run:
-  sudo dpkg -r uconsole-sleep
+- $ sudo dpkg -r uconsole-sleep
+
+The configuration file is located at
+- /etc/uconsole-sleep/config
+
+After editing reload the daemons with 
+- $ sudo systemctl restart sleep-remap-powerkey.service
+- $ sudo systemctl restart sleep-power-control.service
+
+
 
 ######
 
